@@ -1,0 +1,52 @@
+{
+  "name": "figma-variables-export",
+  "description": "A plugin to export Figma variables in W3C Design Tokens format",
+  "version": "1.0.0",
+  "author": "Naresh Bhatia",
+  "license": "MIT",
+  "homepage": "https://github.com/nareshbhatia/figma-variables-export",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nareshbhatia/figma-variables-export"
+  },
+  "scripts": {
+    "build": "build-figma-plugin --typecheck --minify",
+    "clean": "rimraf build manifest.json node_modules",
+    "fix": "run-s _lint:fix _format:fix",
+    "lint": "run-s _lint _format",
+    "watch": "build-figma-plugin --typecheck --watch",
+    "_format": "prettier --list-different '*.{js,ts,json,md}' 'src/**/*.{css,js,jsx,ts,tsx,json,md}'",
+    "_format:fix": "npm run _format -- --write",
+    "_lint": "eslint .",
+    "_lint:fix": "npm run _lint -- --fix"
+  },
+  "dependencies": {
+    "@create-figma-plugin/ui": "^4.0.1",
+    "@create-figma-plugin/utilities": "^4.0.1",
+    "jszip": "^3.10.1",
+    "preact": "^10.27.0"
+  },
+  "devDependencies": {
+    "@code-shaper/eslint-config": "^2.*",
+    "@create-figma-plugin/build": "^4.0.1",
+    "@create-figma-plugin/tsconfig": "^4.0.1",
+    "@figma/plugin-typings": "1.116.0",
+    "@types/node": "^24.1.0",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "eslint": "^8.57.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.6.2",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.9.2"
+  },
+  "figma-plugin": {
+    "editorType": [
+      "figma"
+    ],
+    "id": "figma-variables-export",
+    "name": "Figma Variables Export",
+    "main": "src/main.ts",
+    "ui": "src/ui.tsx"
+  }
+}
