@@ -1,0 +1,101 @@
+<svg
+  width="128"
+  height="128"
+  viewBox="0 0 128 128"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Background circle -->
+  <circle
+    cx="64"
+    cy="64"
+    r="60"
+    fill="url(#backgroundGradient)"
+    stroke="#E1E4E8"
+    strokeWidth="2"
+  />
+
+  <!-- JSON Brackets -->
+  <path
+    d="M28 38C26 38 24 40 24 42V52C24 54 22 56 20 56V60C22 60 24 62 24 64V74C24 76 26 78 28 78"
+    stroke="#0F62FE"
+    strokeWidth="3"
+    strokeLinecap="round"
+    fill="none"
+  />
+
+  <path
+    d="M100 38C102 38 104 40 104 42V52C104 54 106 56 108 56V60C106 60 104 62 104 64V74C104 76 102 78 100 78"
+    stroke="#0F62FE"
+    strokeWidth="3"
+    strokeLinecap="round"
+    fill="none"
+  />
+
+  <!-- Variables representation -->
+  <g transform="translate(40, 45)">
+    <!-- Variable tokens -->
+    <rect x="0" y="0" width="8" height="8" rx="2" fill="#8B5CF6" />
+    <rect x="12" y="0" width="24" height="4" rx="2" fill="#D1D5DB" />
+
+    <rect x="0" y="12" width="8" height="8" rx="2" fill="#10B981" />
+    <rect x="12" y="14" width="32" height="4" rx="2" fill="#D1D5DB" />
+
+    <rect x="0" y="24" width="8" height="8" rx="2" fill="#F59E0B" />
+    <rect x="12" y="26" width="20" height="4" rx="2" fill="#D1D5DB" />
+  </g>
+
+  <!-- Export arrow -->
+  <g transform="translate(64, 75)">
+    <circle cx="0" cy="0" r="18" fill="#0F62FE" fillOpacity="0.1" stroke="#0F62FE" strokeWidth="2" />
+    <path
+      d="M-6 -2L0 4L6 -2"
+      stroke="#0F62FE"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      fill="none"
+    />
+    <line
+      x1="0"
+      y1="-8"
+      x2="0"
+      y2="2"
+      stroke="#0F62FE"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+    />
+  </g>
+
+  <!-- Figma-style dots pattern -->
+  <g opacity="0.6">
+    <circle cx="45" cy="25" r="1.5" fill="#9CA3AF" />
+    <circle cx="55" cy="22" r="1" fill="#9CA3AF" />
+    <circle cx="75" cy="28" r="1.5" fill="#9CA3AF" />
+    <circle cx="85" cy="25" r="1" fill="#9CA3AF" />
+  </g>
+
+  <!-- JSON file indicator -->
+  <g transform="translate(85, 85)">
+    <rect x="0" y="0" width="16" height="20" rx="2" fill="#374151" />
+    <path d="M12 0L16 4H12V0Z" fill="#1F2937" />
+    <text
+      x="8"
+      y="14"
+      textAnchor="middle"
+      fontSize="6"
+      fill="white"
+      fontFamily="monospace"
+    >
+      JSON
+    </text>
+  </g>
+
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#FFFFFF" />
+      <stop offset="100%" stopColor="#F9FAFB" />
+    </linearGradient>
+  </defs>
+</svg>
